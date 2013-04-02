@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" android:stretchColumns="0,1,2"
+        android:id="@+id/table_main" android:layout_height="match_parent">
+  <TableRow >
+    <TextView android:text="SSID" />
+    <TextView android:text="BSSID" android:layout_width="100dp"/> 
+    <!-- TextView  android:text="Cap" / -->
+    <!--  TextView  android:text="Frequency" /-->
+    <TextView  android:text="Level" />
+  </TableRow>
+  <ScrollView
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TableLayout android:scrollbars="vertical"
+                 android:layout_width="fill_parent"
+                 android:stretchColumns="0,1,2" 
+                 android:id="@+id/table_wlan" 
+                 android:layout_height="match_parent">
+    </TableLayout>
+  </ScrollView>
+</TableLayout>
+</LinearLayout>
